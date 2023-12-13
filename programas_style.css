@@ -1,0 +1,386 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    width: 100%;
+}
+
+header{
+    width: 100%;
+    height: 150px;
+    margin-bottom: 50px;
+    background-color: lightgreen;
+}
+
+/* Contenedores del header */
+.menu-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-menu{
+    display: flex;
+    flex-direction: row;
+}
+
+
+/* Contenedor menu */
+.menu-1{
+    width: 100%;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+
+.menu-1 a{
+    font-size: 30px;
+}
+
+.menu-1 h1{
+    font-size: 50px;
+    padding-top: 10px;
+    margin: auto;
+}
+
+/* Area nav */
+.menu-2{
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(56, 109, 56);
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+}
+
+nav ul li{
+    list-style: none;
+    padding: 20px 60px;
+}
+
+nav ul li a{
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+
+
+
+/* Estilos generales */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilos para la sección general */
+.container.general {
+    background-color: #f8f8f8;
+}
+
+.container.general img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.container.general h2 {
+    color: #004080;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.container.general p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Estilos para los programas deportivos */
+.programa-item {
+    margin-bottom: 30px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra el contenido */
+}
+
+.programa-item:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.programa-item img {
+    max-width: 100%; /* Establece el ancho máximo */
+    height: auto;
+    border-bottom: 1px solid #ddd;
+    border-radius: 10px 10px 0 0; /* Añadido para esquinas redondeadas */
+}
+
+.programa-item-content {
+    padding: 15px;
+    width: 200%;
+    box-sizing: border-box;
+    text-align: center; /* Centra el texto */
+}
+
+.programa-item h3 {
+    color: #004080;
+    font-size: 24px;
+    margin-top: 15px;
+}
+
+.programa-item p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.programa-item a {
+    display: inline-block;
+    background-color: #004080;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.programa-item a:hover {
+    background-color: #00264d;
+}
+
+
+/* Estilos para la sección de entrenamiento básico */
+.container.general .txt h3 {
+    color: #004080;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.container.general .txt h4 {
+    color: #004080;
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.container.general .txt table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.container.general .txt table, .container.general .txt th, .container.general .txt td {
+    border: 1px solid #ddd;
+}
+
+.container.general .txt th, .container.general .txt td {
+    padding: 10px;
+    text-align: left;
+}
+
+.container.general .txt th {
+    background-color: #004080;
+    color: #fff;
+}
+
+/* Estilos para la sección de estadísticas clave */
+.container.inf-1 h2 {
+    color: #004080;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.info-circle {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.circle-txt {
+    width: 45%;
+    margin-bottom: 20px;
+}
+
+.circle-1 {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 64, 128, 0.1);
+}
+
+.circle-1 img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.circle-1 p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.circle-1 .value-circle {
+    font-size: 24px;
+    color: #004080;
+}
+
+
+
+
+       /* Contenedor footer */
+/* Cajas footer */
+.footer-container{
+    width: 100%;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    background-color: #222;
+}
+
+/* Estilo a cajas */
+.footer-caja{
+    width: 92%;
+    margin: auto;
+}
+
+/* Caja de contacto */
+.fc-1{
+    height: 70%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.caja-form{
+    width: 50%;
+}
+
+.caja-redes{
+    width: 50%;
+    height: 100%;
+    text-align: center;
+}
+
+
+/* Estilo por cajas */
+/* Estilo a texto */
+.caja-coment{
+    width: 100%;
+    height: 10%;
+    text-align: center;
+}
+
+.caja-coment h4{
+    color: white;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+/* Estilo a caja de formulario */
+.formulario{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario label{
+    color: white;
+    padding-left: 5px
+}
+
+.formulario input{
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 12px;
+    border: 1px solid blue;
+}
+
+.formulario textarea{
+    height: 170px;
+    margin-bottom: 10px;
+    border-radius: 12px;
+}
+
+/* Estilo a caja de redes sociales */
+.caja-redes h2{
+    color: white;
+    font-size: 25px;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+.enlaces-redes{
+    height: 80%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.icon-img{
+    width: 6%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.icon-img a{
+    color: white;
+    margin-left: -10px;
+}
+
+/* Caja de derechos de autor */
+
+.fc-2{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.fc-2 p{
+    color: white;
+    font-size: 15px;
+}
+
+.fc-3{
+    margin-top: -20px;
+    text-align: start;
+}
+
+.fc-3 a{
+    color: white;
+    font-size: 15px;
+}
+
+
+/* Estilos de los enlaces de navegación en el pie de página */
+.fc-navegacion a {
+    text-decoration: none;
+    color: #fff;
+    margin-right: 10px;
+}
+
+.fc-navegacion a:last-child {
+    margin-right: 0;
+}
+
+
+
+
